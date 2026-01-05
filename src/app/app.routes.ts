@@ -11,5 +11,11 @@ export const routes: Routes = [
     loadComponent: () => import('./components/manifesto/manifesto-list/manifesto-list')
                           .then(m => m.ManifestoList)
    },
+
+   {
+    path: 'manifestoescalas',
+    loadComponent: () => import('./components/manifesto-escala-form/manifesto-escala-form')
+                          .then(m => m.ManifestoEscalaForm)
+   },
     { path: '', redirectTo: '/manifestos', pathMatch: 'full' }
 ];
