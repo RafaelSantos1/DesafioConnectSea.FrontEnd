@@ -38,7 +38,4 @@ Para gerar o build otimizado na pasta dist:
 ng build
 ```
 
-## Observações
-Não foi implementado testes unitários.
-
 
