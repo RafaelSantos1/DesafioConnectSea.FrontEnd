@@ -1,0 +1,24 @@
+
+
+
+<table class="table table-striped table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>Navio</th>
+      <th>Porto</th>
+      <th>Status</th>
+      <th>ETA</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let escala of escalas">
+      <td>{{ escala.navio }}</td>
+      <td>{{ escala.porto }}</td>
+      <td>{{ escala.status | status }}</td>      
+      <td>{{ escala.eta | date:'dd/MM/yyyy hh:mm:ss'}}</td>      
+    </tr>
+  </tbody>
+</table>
+
+  
