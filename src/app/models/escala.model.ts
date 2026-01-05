@@ -1,6 +1,6 @@
 export interface Escala {
  navio : string,
  porto : string,
- status: int,
+ status: number,
  eta: Date
 }
